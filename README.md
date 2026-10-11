@@ -1,88 +1,98 @@
-# AIML Practical Assignments – 10 Practicals
+# Artificial Intelligence and Machine Learning — Practical Assignments
 
-This repository contains runnable implementations of the 10 AIML practical assignments.
+A structured collection of **10 Artificial Intelligence and Machine Learning (AIML) practical assignments** using Python. This repository brings together exercises in data analysis, machine learning, computer vision, and multimodal classification for academic study.
 
-## Practicals
+## Repository Overview
 
-1. Identify the association between dependent and independent variables.
-2. Apply clustering techniques using unsupervised learning.
-3. Apply dimensionality reduction using PCA.
-4. Apply Naive Bayes classification algorithms.
-5. Apply the KNN algorithm for classification.
-6. Implement Linear Regression.
-7. Implement SVM for Regression.
-8. Apply regularization to avoid overfitting.
-9. Apply object detection from CCTV footage.
-10. Design a model to detect Fake News from Multimodal data.
+Each practical is organized in its own folder with a Python script and, where provided, supporting documentation, datasets, or generated outputs.
 
-## Recommended setup in VS Code
+## Practical Index
 
-Use Python 3.11 or newer. Create a virtual environment:
+| No. | Topic | Folder |
+|:--:|---|---|
+| 01 | Association Between Dependent and Independent Variables | [`practical_01_association`](practical_01_association/) |
+| 02 | Clustering | [`practical_02_clustering`](practical_02_clustering/) |
+| 03 | Principal Component Analysis (PCA) | [`practical_03_pca`](practical_03_pca/) |
+| 04 | Naive Bayes Classification | [`practical_04_naive_bayes`](practical_04_naive_bayes/) |
+| 05 | K-Nearest Neighbors (KNN) | [`practical_05_knn`](practical_05_knn/) |
+| 06 | Linear Regression | [`practical_06_linear_regression`](practical_06_linear_regression/) |
+| 07 | Support Vector Regression (SVR) | [`practical_07_svm_regression`](practical_07_svm_regression/) |
+| 08 | Regularization Techniques | [`practical_08_regularization`](practical_08_regularization/) |
+| 09 | Object Detection Using CCTV Footage | [`practical_09_object_detection_cctv`](practical_09_object_detection_cctv/) |
+| 10 | Multimodal Fake News Detection | [`practical_10_multimodal_fake_news`](practical_10_multimodal_fake_news/) |
+
+## Technologies and Tools
+
+- **Language:** Python
+- **Editor:** Visual Studio Code (VS Code)
+- **Version control:** Git and GitHub
+- **Dependencies:** Refer to [`requirements.txt`](requirements.txt) for the project's Python packages.
+
+## Folder Structure
+
+```text
+AIML-Practicals/
+├── practical_01_association/
+├── practical_02_clustering/
+├── practical_03_pca/
+├── practical_04_naive_bayes/
+├── practical_05_knn/
+├── practical_06_linear_regression/
+├── practical_07_svm_regression/
+├── practical_08_regularization/
+├── practical_09_object_detection_cctv/
+├── practical_10_multimodal_fake_news/
+├── .gitignore
+├── README.md
+├── SUBMISSION_CHECKLIST.md
+└── requirements.txt
+```
+
+Some practical folders also contain their own `README.md`, `data/`, or `outputs/` directories.
+
+## Getting Started
+
+### 1. Clone the repository
 
 ```bash
-python -m venv .venv
+git clone https://github.com/bhaveshbhole30-dotcom/AIML-Practicals.git
+cd AIML-Practicals
 ```
 
-Windows PowerShell:
+### 2. Install the dependencies
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Windows Command Prompt:
-
-```cmd
-.venv\Scripts\activate
-```
-
-Install dependencies:
+Ensure Python and pip are installed, then run:
 
 ```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Run any practical from its folder, for example:
+### 3. Run a practical
+
+For example, to run Practical 01:
 
 ```bash
 cd practical_01_association
 python practical_01.py
 ```
 
-Each practical has:
-- `practical_XX.py` – main executable program
-- `README.md` – aim, theory, procedure, and result
-- `data/` – small self-contained dataset where applicable
-- `outputs/` – generated plots/results (created when the program runs)
+Run other practicals from their respective folders. Consult each practical's documentation for any required input data, model files, or additional setup.
 
-## Important note for Practicals 9 and 10
+## Learning Objectives
 
-Practical 9 uses YOLO object detection. Place a CCTV/video file in:
-`practical_09_object_detection_cctv/data/input.mp4`
+- Explore relationships between variables and visualize data.
+- Apply clustering, dimensionality reduction, classification, and regression techniques.
+- Study regularization and model evaluation.
+- Explore object detection and multimodal machine learning applications.
+- Organize and document Python practical work using GitHub.
 
-If no video is supplied, the script prints the exact setup instructions.
+## Academic Submission
 
-Practical 10 demonstrates a lightweight multimodal fake-news classifier using:
-- text TF-IDF features
-- image-derived visual features
+This repository is organized for AIML coursework, practical demonstrations, and academic review. The availability of a script does not guarantee it will run without its required dependencies or input data.
 
-It is an educational practical implementation, not a production fact-checking system.
+**Repository:** [bhaveshbhole30-dotcom/AIML-Practicals](https://github.com/bhaveshbhole30-dotcom/AIML-Practicals)
 
-## Suggested GitHub workflow
+**Maintained by:** [bhaveshbhole30-dotcom](https://github.com/bhaveshbhole30-dotcom)
 
-After verifying the programs locally:
+> **Attribution:** Preserve any original authorship notices, third-party licenses, and source acknowledgements that apply to the included code, datasets, or other materials.
 
-```bash
-git init
-git add .
-git commit -m "Add all 10 AIML practicals"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/aiml-practicals.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username and create the empty repository first.
-
-## Academic submission
-
-Before submission, run the practicals and keep the generated figures/results. Add your name, PRN, roll number, division, and academic year wherever your college format requires them.
