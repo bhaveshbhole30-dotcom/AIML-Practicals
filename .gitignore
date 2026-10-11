@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+yolo11n.pt
+practical_09_object_detection_cctv/data/input.mp4
+practical_09_object_detection_cctv/outputs/detected_output.mp4
